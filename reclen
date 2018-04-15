@@ -1,0 +1,9 @@
+def reclen(str):
+    if str=='':
+        return 0
+    else:
+        return 1 + reclen(str[1:])
+        
+a=raw_input('enter a string')
+c=reclen(a)
+print c
